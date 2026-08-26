@@ -30,9 +30,9 @@ export const PERSONAL_INFO = {
   projects, and continuously improving my craft. I believe in writing clean, maintainable 
   code and following best practices to deliver high-quality software solutions.`,
   yearsOfExperience: 1,
-  projectsCompleted: 15,
-  clientsSatisfied: 10,
-  coffeeConsumed: 250, // Just for fun!
+  // projectsCompleted: 15,
+  // clientsSatisfied: 10,
+  // coffeeConsumed: 250, // Just for fun!
   whatsapp: 'https://wa.me/+918489551445',
 } as const;
 

@@ -106,7 +106,7 @@ const About: React.FC = () => {
                 </motion.div>
 
                 {/* Tech stack badge */}
-                <motion.div
+                {/* <motion.div
                   animate={{ y: [0, -8, 0] }}
                   transition={{ duration: 4, repeat: Infinity, delay: 1 }}
                   className="absolute -top-5 -left-5 glass-card px-4 py-3"
@@ -117,16 +117,16 @@ const About: React.FC = () => {
                       Open to Work
                     </span>
                   </div>
-                </motion.div>
+                </motion.div> */}
 
                 {/* Decorative dots */}
-                <div
+                {/* <div
                   className="absolute -bottom-10 -left-10 w-32 h-32 opacity-20"
                   style={{
                     backgroundImage: 'radial-gradient(circle, #6366f1 1px, transparent 1px)',
                     backgroundSize: '12px 12px',
                   }}
-                />
+                /> */}
               </div>
             </div>
           </ScrollReveal>
@@ -202,7 +202,7 @@ const About: React.FC = () => {
         </div>
 
         {/* Stats */}
-        <motion.div
+        {/* <motion.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
@@ -212,7 +212,7 @@ const About: React.FC = () => {
           {stats.map((stat, i) => (
             <StatCard key={stat.label} {...stat} delay={i * 0.1} />
           ))}
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

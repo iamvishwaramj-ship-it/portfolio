@@ -216,7 +216,7 @@ const Contact: React.FC = () => {
           <ScrollReveal direction="right">
             <div className="glass-card p-8">
               <h3 className="text-xl font-bold font-poppins mb-6" style={{ color: 'var(--text-primary)' }}>
-                Send Project Inquiry
+                Send Project Enquiry
               </h3>
 
               {/* Status notification */}
