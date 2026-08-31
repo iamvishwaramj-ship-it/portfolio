@@ -12,7 +12,7 @@
       icon: <FaEnvelope className="w-5 h-5" />,
       label: 'Email',
       value: PERSONAL_INFO.email,
-      href: `mailto:${PERSONAL_INFO.email}`,
+      href: `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(PERSONAL_INFO.email)}&su=${encodeURIComponent('Project Inquiry')}`,
       color: '#6366f1',
     },
     {

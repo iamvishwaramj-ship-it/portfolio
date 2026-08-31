@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaHeart, FaArrowUp } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaArrowUp } from 'react-icons/fa';
 import { PERSONAL_INFO, NAV_LINKS } from '../constants/data';
 
 const Footer: React.FC = () => {

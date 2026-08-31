@@ -1,56 +1,56 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaCode, FaRocket, FaUsers, FaCoffee } from 'react-icons/fa';
+// import { FaCode, FaRocket, FaUsers, FaCoffee } from 'react-icons/fa';
 import { PERSONAL_INFO } from '../constants/data';
 import ScrollReveal from '../components/shared/ScrollReveal';
-import { useCountUp } from '../hooks/useCountUp';
-import { staggerContainer, staggerItem } from '../utils/animations';
+// import { useCountUp } from '../hooks/useCountUp';
+// import { staggerContainer, staggerItem } from '../utils/animations';
 
-interface StatCardProps {
-  icon: React.ReactNode;
-  value: number;
-  suffix?: string;
-  label: string;
-  color: string;
-  delay?: number;
-}
+// interface StatCardProps {
+//   icon: React.ReactNode;
+//   value: number;
+//   suffix?: string;
+//   label: string;
+//   color: string;
+//   delay?: number;
+// }
 
-const StatCard: React.FC<StatCardProps> = ({ icon, value, suffix = '+', label, color }) => {
-  const { count, ref } = useCountUp(value);
+// const StatCard: React.FC<StatCardProps> = ({ icon, value, suffix = '+', label, color }) => {
+//   const { count, ref } = useCountUp(value);
 
-  return (
-    <motion.div
-      ref={ref as React.RefObject<HTMLDivElement>}
-      variants={staggerItem}
-      whileHover={{ y: -8, scale: 1.02 }}
-      className="glass-card p-6 text-center flex flex-col items-center gap-3 hover-lift"
-      style={{ '--card-accent': color } as React.CSSProperties}
-    >
-      <div
-        className="w-12 h-12 rounded-2xl flex items-center justify-center text-white"
-        style={{ background: `linear-gradient(135deg, ${color}33, ${color}66)`, color }}
-      >
-        {icon}
-      </div>
-      <div>
-        <div className="text-3xl font-bold font-poppins" style={{ color }}>
-          {count}{suffix}
-        </div>
-        <div className="text-sm mt-1" style={{ color: 'var(--text-muted)' }}>
-          {label}
-        </div>
-      </div>
-    </motion.div>
-  );
-};
+//   return (
+//     <motion.div
+//       ref={ref as React.RefObject<HTMLDivElement>}
+//       variants={staggerItem}
+//       whileHover={{ y: -8, scale: 1.02 }}
+//       className="glass-card p-6 text-center flex flex-col items-center gap-3 hover-lift"
+//       style={{ '--card-accent': color } as React.CSSProperties}
+//     >
+//       <div
+//         className="w-12 h-12 rounded-2xl flex items-center justify-center text-white"
+//         style={{ background: `linear-gradient(135deg, ${color}33, ${color}66)`, color }}
+//       >
+//         {icon}
+//       </div>
+//       <div>
+//         <div className="text-3xl font-bold font-poppins" style={{ color }}>
+//           {count}{suffix}
+//         </div>
+//         <div className="text-sm mt-1" style={{ color: 'var(--text-muted)' }}>
+//           {label}
+//         </div>
+//       </div>
+//     </motion.div>
+//   );
+// };
 
 const About: React.FC = () => {
-  const stats = [
-    { icon: <FaCode className="w-5 h-5" />, value: PERSONAL_INFO.yearsOfExperience, suffix: '+', label: 'Years Experience', color: '#6366f1' },
-    { icon: <FaRocket className="w-5 h-5" />, value: PERSONAL_INFO.projectsCompleted, suffix: '+', label: 'Projects Completed', color: '#8b5cf6' },
-    { icon: <FaUsers className="w-5 h-5" />, value: PERSONAL_INFO.clientsSatisfied, suffix: '+', label: 'Happy Clients', color: '#06b6d4' },
-    { icon: <FaCoffee className="w-5 h-5" />, value: PERSONAL_INFO.coffeeConsumed, suffix: '+', label: 'Cups of Coffee', color: '#f59e0b' },
-  ];
+  // const stats = [
+  //   { icon: <FaCode className="w-5 h-5" />, value: PERSONAL_INFO.yearsOfExperience, suffix: '+', label: 'Years Experience', color: '#6366f1' },
+  //   { icon: <FaRocket className="w-5 h-5" />, value: PERSONAL_INFO.projectsCompleted, suffix: '+', label: 'Projects Completed', color: '#8b5cf6' },
+  //   { icon: <FaUsers className="w-5 h-5" />, value: PERSONAL_INFO.clientsSatisfied, suffix: '+', label: 'Happy Clients', color: '#06b6d4' },
+  //   { icon: <FaCoffee className="w-5 h-5" />, value: PERSONAL_INFO.coffeeConsumed, suffix: '+', label: 'Cups of Coffee', color: '#f59e0b' },
+  // ];
 
   return (
     <section id="about" className="section-padding" aria-label="About section">

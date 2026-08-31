@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaDownload, FaArrowRight } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiChevronDown } from 'react-icons/hi';
 import { useTypewriter } from '../hooks/useTypewriter';
 import { PERSONAL_INFO, TYPEWRITER_STRINGS } from '../constants/data';
@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
   const scrollToAbout = () => {
     document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' });
   };
-
+ 
   return (
     <section
       id="hero"
